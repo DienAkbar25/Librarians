@@ -18,8 +18,3 @@ export const books = librarians.table ("books",
 
 )   
 
-export const tabel = { 
-    books
-} as const
-
-export type table = typeof Table
