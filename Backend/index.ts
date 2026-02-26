@@ -1,12 +1,11 @@
 import { Elysia } from "elysia"
-import { checkdb } from "./src/controllers/books/SearchByTitle"
+import { Get10books } from "./src/controllers/books/get10books";
+import { bookroutes } from "./src/routes/books/get10books";
+
 
 const app = new Elysia();
+app.use(bookroutes)
 
-app.get ("/controllers/books/SearchByTitle", async () => {
-  return await checkdb ()
-
-})
 
 app.listen(3000)
 console.log("Server running on http://localhost:3000")
