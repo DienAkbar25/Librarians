@@ -1,4 +1,3 @@
-import { status } from "elysia"
 import { db } from "../../config/db"
 import { books } from "../../db/schema/books"
 import { desc } from "drizzle-orm"
