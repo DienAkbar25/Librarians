@@ -1,4 +1,4 @@
-import { Elysia, status } from "elysia"
+import { Elysia } from "elysia"
 import { searchbytitle } from "../../controllers/books/searchbytitle"
 
 export const searchbytitleroutes = new Elysia ()
