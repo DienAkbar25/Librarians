@@ -1,4 +1,5 @@
-import { varchar, date, text, serial, integer, decimal, pgSchema } from "drizzle-orm/pg-core";
+import { varchar, date, text, serial, integer, decimal} from "drizzle-orm/pg-core";
+import { pgSchema } from "drizzle-orm/pg-core";
 
 const librarians = pgSchema("librarians")
 
