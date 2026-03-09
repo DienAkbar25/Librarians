@@ -1,4 +1,3 @@
-import { Table } from "drizzle-orm";
 import { varchar, serial, date, boolean, decimal} from "drizzle-orm/pg-core";
 import { pgSchema } from "drizzle-orm/pg-core";
 import { promotypes } from "./enum";
