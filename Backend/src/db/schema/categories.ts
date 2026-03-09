@@ -5,7 +5,7 @@ const librarians = pgSchema("librarians")
 
 export const categories = librarians.table("categories",
     {
-        id_category:serial("id_categorie").notNull().primaryKey(),
+        id_category:serial("id_category").notNull().primaryKey(),
         category_name:varchar("category_name", { length : 100}).notNull(),
         characteristic:varchar("characteristic", { length : 25}).notNull()
 

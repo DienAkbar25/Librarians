@@ -10,8 +10,8 @@ try {
     const result = await db
         .select()
         .from(books)
-        .innerJoin(bookcategory, eq(books.id_book, bookcategory.id_book))
-        .innerJoin(categories, eq(bookcategory.id_book, categories.id_category))
+        .innerJoin(bookcategory, eq(books.id_book, bookcategory.id_category))
+        .innerJoin(categories, eq(bookcategory.id_category, categories.id_category))
         .where(eq(categories.category_name, categoryname))
 
         return {
