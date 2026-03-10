@@ -2,7 +2,7 @@ import { db } from "../../config/db"
 import { books } from "../../db/schema/books"
 import { ilike } from "drizzle-orm"
 
-export const searchbytitle = async (keyword : string) => {
+export const title = async (keyword : string) => {
     try {
         const result = await db 
         .select()

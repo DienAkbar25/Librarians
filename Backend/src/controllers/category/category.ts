@@ -5,7 +5,7 @@ import { books } from "../../db/schema/books";
 import { bookcategory } from "../../db/schema/bookcategory";
 
 
-export const searchbycategory = async ( categoryname : string) => {
+export const category = async ( categoryname : string) => {
 try {
     const result = await db
         .select()

@@ -1,5 +1,5 @@
 import { Elysia } from "elysia";
-import { searchbycategory } from "../../controllers/books/searchbycategory"
+import { category } from "../../controllers/books/searchbycategory"
 
 export const searchbycategoryroutes = new Elysia ()
     .get("api/books/searchbycategory", async ({ query }) => {
@@ -10,5 +10,5 @@ export const searchbycategoryroutes = new Elysia ()
                 status : "error",
                 message : "need query"
             }
-        } return await searchbycategory(keyword)
+        } return await category(keyword)
     }) 

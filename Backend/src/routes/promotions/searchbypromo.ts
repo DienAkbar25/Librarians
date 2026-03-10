@@ -1,5 +1,5 @@
 import { Elysia } from "elysia"
-import { searchbypromotions } from "../../controllers/books/searchbypromo" 
+import { promotion } from "../../controllers/books/searchbypromo" 
 
 export const searchbypromoroutes = new Elysia ()
     .get("api/promo/searchbypromo", async ({ query }) => {
@@ -10,6 +10,6 @@ export const searchbypromoroutes = new Elysia ()
                 status: "error",
                 message: "need query"
             }
-        } return await searchbypromotions(keyword)
+        } return await promotion(keyword)
         
     })

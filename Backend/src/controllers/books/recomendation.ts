@@ -3,7 +3,7 @@ import { books } from "../../db/schema/books"
 import { desc } from "drizzle-orm"
 
 
-export const Get10books = async () => {
+export const book = async () => {
 try {
     const result = await db 
         .select()

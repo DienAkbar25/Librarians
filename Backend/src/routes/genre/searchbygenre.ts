@@ -1,5 +1,5 @@
 import { Elysia } from "elysia";
-import { searchbygenre } from "../../controllers/books/searchbygenre";
+import { genres } from "../../controllers/books/searchbygenre";
 
 export const searchgenreroutes = new Elysia ()
     .get ("api/books/searchbygenre", async ({ query }) => {

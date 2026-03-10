@@ -5,7 +5,7 @@ import { booksgenre } from "../../db/schema/booksgenre";
 import { genre } from "../../db/schema/genre";
 
 
-export const searchbygenre = async (genrename:string) => {
+export const genres = async (genrename:string) => {
 try {
     const result = await db
         .select()

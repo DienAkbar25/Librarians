@@ -4,7 +4,7 @@ import { bookpromo } from "../../db/schema/bookpromo";
 import { db } from "../../config/db";
 import { eq } from "drizzle-orm";
 
-export const searchbypromotions = async (promoname : string) => {
+export const promotion = async (promoname : string) => {
     try {
         const result = await db
             .select()

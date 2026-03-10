@@ -1,7 +1,7 @@
 import { Elysia } from "elysia"
-import { searchbytitle } from "../../controllers/books/searchbytitle"
+import { title } from "../../controllers/books/title"
 
-export const searchbytitleroutes = new Elysia ()
+export const title = new Elysia ()
     .get ("api/books/searchbytitle", async ({ query }) => {
         const { keyword } = query;
 
@@ -11,6 +11,6 @@ export const searchbytitleroutes = new Elysia ()
                 message : "need query"
             }
         }
-        return await searchbytitle(keyword);
+        return await title(keyword);
 
     })  
